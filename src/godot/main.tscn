@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkv2lya17tq28"]
+
+[ext_resource type="Texture2D" uid="uid://crmwc3o0nf0xv" path="res://8081_earthmap10k.jpg" id="1_11hpy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_skbku"]
+albedo_texture = ExtResource("1_11hpy")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tj654"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="EarthCSG" type="CSGSphere3D" parent="."]
+transform = Transform3D(0.506646, -0.347207, -0.789149, -0.0580127, 0.899519, -0.433013, 0.8602, 0.265165, 0.435596, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_skbku")
+radius = 3.0
+radial_segments = 50
+rings = 50
+material = SubResource("StandardMaterial3D_tj654")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.0647587, 0, 0.997901, 0, 1, 0, -0.997901, 0, 0.0647587, 5.72677, 0, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.224144, -0.129409, 0.965926, 0.678604, 0.69065, 0.25, -0.699469, 0.711517, -0.0669875, -2.21601, 71.1326, -101.895)
